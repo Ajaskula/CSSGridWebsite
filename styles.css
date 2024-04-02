@@ -1,0 +1,289 @@
+.header {
+  grid-area: header;
+  background-color: #65135e;
+  display:grid;
+  grid-template-columns:1fr 3fr;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  }
+  .header-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  }
+
+  .footer {
+  grid-area: footer;
+  background-color: #671313;
+  color: white;
+  padding: 10px;
+  }
+  @keyframes ping {
+  0% {
+      transform: scale(0);
+      opacity: 1.0;
+  }
+  100% {
+      transform: scale(2);
+      opacity: 0;
+  }
+  }
+  .animate-ping {
+  animation: ping 3s cubic-bezier(0, 0, 0.7, 1) infinite;
+  }
+
+  .wrapper{
+      background: #260731;
+      display:grid;
+      grid-template-columns:5fr 1fr;
+      grid-gap:20px;
+  }
+  .left-column{
+      background: #033e01;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Dodaj cień */
+  }
+  .right-column{
+      background: #3e0101;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Dodaj cień */
+      padding: 10px;
+  }
+  .header-left-column{
+      background: #65135e;
+      
+  }
+  .header-right-column{
+      background: #65135e;
+  }
+  .text-wrapper{
+      background:#65135e;
+      display:grid;
+      grid-template-columns:1fr 6fr 1fr;
+      grid-gap:20px;
+      
+  }
+  .middle-column {
+  grid-column: 2; /* Umieść w środkowej kolumnie */
+  justify-content: center;
+  background: #f1dd83;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Dodaj cień */
+  font-size: large;
+  }
+  .wrapper-3-columns{
+      background:#136065;
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      grid-gap:20px;
+      font-size: large;
+  }
+  .left-column-3{
+      margin-top: 20px;
+      background: #0ca00796;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Dodaj cień */
+      padding: 10px;
+  }
+  .middle-column-3{
+      margin-top: 20px;
+      background: #600606b5;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Dodaj cień */
+      padding: 10px;
+  }
+  .right-column-3{
+      margin-top: 20px;
+      background: #743204a5;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Dodaj cień */
+      padding: 10px;
+  }
+  .styled-table {
+width: 100%;
+/* border-collapse: collapse; */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Dodatkowy margines na dole */
+}
+
+caption {
+  font-size: 1.5rem; /* Rozmiar czcionki dla caption */
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f02d2dca; /* Tło caption */
+  border-bottom: 1px solid #ddd; /* Dolna krawędź */
+  border-top-left-radius: 8px; /* Zaokrąglony lewy górny róg */
+  border-top-right-radius: 8px; /* Zaokrąglony prawy górny róg */
+}
+
+th, td {
+  padding: 10px; /* Wewnętrzny odstęp */
+  text-align: left; /* Wyrównanie tekstu do lewej */
+  border-bottom: 1px solid #318ea87a; /* Dolna krawędź */
+}
+
+th {
+  background-color: #9993229d; /* Tło nagłówka */
+  font-weight: bold; /* Pogrubienie tekstu w nagłówku */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #862ccbc1; /* Alternatywne tło dla parzystych wierszy */
+}
+tbody tr:nth-child(odd) {
+  background-color: #dbcf26c1; /* Alternatywne tło dla parzystych wierszy */
+}
+
+tbody tr:hover {
+  background-color: #ac3f3f; /* Tło wiersza po najechaniu myszką */
+}
+.list-container {
+  max-width: 600px; /* Maksymalna szerokość kontenera */
+  margin: 0 auto; /* Wyśrodkowanie */
+  padding: 20px; /* Wewnętrzny margines */
+  background-color: #f6ff00a2; /* Tło kontenera */
+  border-radius: 8px; /* Zaokrąglenie rogów */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Cień */
+}
+
+.list-title {
+  text-align: center; /* Wyśrodkowanie tekstu */
+  font-size: 1.5rem; /* Rozmiar czcionki */
+  font-weight: bold; /* Pogrubienie */
+  margin-bottom: 20px; /* Margines dolny */
+}
+
+.styled-list {
+  padding-left: 0; /* Usunięcie domyślnego wcięcia */
+  list-style-type: none; /* Usunięcie punktorów */
+  counter-reset: list-counter; /* Zresetowanie licznika */
+}
+
+.styled-list-item {
+  margin-bottom: 10px; /* Margines dolny dla każdego elementu */
+  counter-increment: list-counter; /* Inkrementacja licznika */
+}
+
+.styled-list-item:before {
+  content: counter(list-counter, upper-roman) ": "; /* Użyj numerów rzymskich */
+  font-weight: bold; /* Pogrubienie numeru */
+  color: #4299e1; /* Kolor numeru */
+  margin-right: 5px; /* Margines od numeru do tekstu */
+}
+
+.styled-list-item strong {
+  color: #4299e1; /* Kolor pogrubionego tekstu */
+}
+form {
+  max-width: 600px; /* Maksymalna szerokość formularza */
+  margin: 0 auto; /* Wyśrodkowanie */
+  padding: 20px; /* Wewnętrzny margines */
+  background-color: #f9f9f9; /* Tło formularza */
+  border-radius: 8px; /* Zaokrąglenie rogów */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Cień */
+  margin-bottom: 20px; /* Margines dolny */
+}
+
+/* Style dla nagłówków */
+label {
+  margin-bottom: 0.5rem; /* Margines dolny */
+  display: block; /* Wyświetlanie etykiety jako bloku */
+  font-weight: bold; /* Pogrubienie */
+}
+
+/* Style dla pól tekstowych */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%; /* Szerokość równa 100% */
+  padding: 0.5rem; /* Wewnętrzny padding */
+  margin-bottom: 1rem; /* Margines dolny */
+  border: 1px solid #ccc; /* Grubość i kolor obramowania */
+  border-radius: 4px; /* Zaokrąglenie rogów */
+  box-sizing: border-box; /* Uwzględnienie paddingu i obramowania w szerokości */
+}
+
+/* Styl dla przycisku */
+input[type="submit"] {
+  background-color: #4299e1; /* Kolor tła przycisku */
+  color: #fff; /* Kolor tekstu */
+  border: none; /* Brak obramowania */
+  padding: 0.5rem 1rem; /* Wewnętrzny padding */
+  border-radius: 4px; /* Zaokrąglenie rogów */
+  cursor: pointer; /* Kursor wskazujący */
+  transition: background-color 0.3s; /* Płynna zmiana koloru tła */
+}
+
+input[type="submit"]:hover {
+  background-color: #3182ce; /* Kolor tła po najechaniu */
+}
+
+/* Styl dla paska postępu */
+progress {
+  width: 100%; /* Szerokość równa 100% */
+  height: 1.5rem; /* Wysokość paska postępu */
+  margin-bottom: 1rem; /* Margines dolny */
+  border-radius: 8px; /* Zaokrąglenie rogów */
+}
+
+/* Styl dla komunikatu o sukcesie */
+.success-message {
+  color: green; /* Kolor tekstu */
+  font-weight: bold; /* Pogrubienie */
+  text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.flex-none {
+  background-color: #34D399;
+  padding: 1rem;
+  color: rgba(255, 255, 255, 0.754);
+  flex-grow: 0; /* Ustawienie na 0, aby nie rozciągał się */
+}
+
+.flex-auto {
+  background-color: #3B82F6;
+  padding: 1rem;
+  color: white;
+  flex-grow: 1; /* Ustawienie na 1, aby rozciągał się */
+}
+.flex-container {
+  display: flex;
+  background-color: #2a013e;
+  justify-content: space-between; /* Rozłożenie elementów w przestrzeni */
+  align-items: center; /* Wyrównanie w pionie */
+  flex-wrap: wrap; /* Rozwijanie do następnego wiersza, jeśli nie ma wystarczająco dużo miejsca */
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row; /* Układanie w rzędzie */
+  /* margin-bottom: 20px; Margines dolny */
+  /* margin-left: 20px; Margines dolny */
+  /* margin-top: 20px; Margines dolny */
+  padding: 10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column; /* Układanie w kolumnie */
+  margin-right: 20px; /* Margines prawy */
+  padding: 10px;
+}
+
+.element {
+  background-color: #083da8de; /* Kolor tła */
+  color: rgba(255, 255, 255, 0.663); /* Kolor tekstu */
+  padding: 10px; /* Wewnętrzny padding */
+  margin-bottom: 10px; /* Margines dolny */
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #343a40; /* Kolor tła */
+      color: #fff; /* Kolor tekstu */
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+    }
+    .footer {
+      background-color: #212529;
+      color: #fff;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .mb-4 {
+  font-family: 'Arial', sans-serif; /* Wybierz preferowaną czcionkę */
+  text-align: center; /* Wyśrodkowanie tekstu */
+}
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="logo">
+      <img src="logo.png" alt="Logo" width="200">
+    </div>
+    <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="textInput1">Imię:</label>
+            <input type="text" class="form-control" id="textInput1" placeholder="Podaj Imię">
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="textInput2">Nazwisko:</label>
+            <input type="text" class="form-control" id="textInput2" placeholder="Wpisz Nazwisko">
+          </div>
+        </div>
+      </div>
+    <form>
+      <div class="form-group">
+        <label for="textInput">Mail kontaktowy:</label>
+        <input type="text" class="form-control" id="textInput" placeholder="@email...">
+      </div>
+      <div class="form-group">
+        <label for="checkboxInput">Wybierz kierunek pierwszego wyboru:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="checkboxInput">
+          <label class="form-check-label" for="checkboxInput">
+            Bioinformatyka
+          </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkboxInput">
+            <label class="form-check-label" for="checkboxInput">
+              Matematyka
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkboxInput">
+            <label class="form-check-label" for="checkboxInput">
+              Informatyka
+            </label>
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="checkboxInput">Zamierzasz rozpocząć studia I czy II stopnia:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioOptions" id="radioOption1" value="option1" checked>
+          <label class="form-check-label" for="radioOption1">
+            Studia I stopnia
+          </label>
+        </div>
+        <!-- <hr class = "my-4"> -->
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radioOptions" id="radioOption2" value="option2">
+          <label class="form-check-label" for="radioOption2">
+            Studia II stopnia
+          </label>
+        </div>
+      </div>
+      <!-- <hr class = "my-8"> -->
+      <div class="form-group">
+        <label for="selectInput">Z kim chcesz dostać koszulkę powitalną</label>
+        <select class="form-control" id="selectInput">
+          <option>Wybierz ulubionego matematyka:</option>
+          <option>Euler</option>
+          <option>Newton</option>
+          <option>Banach</option>
+          <option>Jordan</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Wyślij</button>
+    </form>
+  </div>
+
+  <footer class="footer text-center">
+    Adam Jaskuła - wszelkie prawa zastrzeżone &copy; 2024
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
